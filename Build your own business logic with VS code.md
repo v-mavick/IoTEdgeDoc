@@ -16,7 +16,7 @@ You can deploy Azure IoT Edge on a simulated device. Here are the tutorials for 
 ### Develop and deploy a C# IoT Edge module ###
 You can create a new IoT Edge module and build your own business logic inside. Please follow [this tutorial](https://docs.microsoft.com/en-us/azure/iot-edge/tutorial-csharp-module) for more details.
 ### Debug your IoT Edge C# module ###
-1. To start debugging, you need to use the dockerfile.debug to rebuild your docker image and deploy your Edge solution again. In VS Code explorer, select Dockerfile.debug and Right-click to choose Build IoT Edge module Docker image. Then containerize and publish your module image as usual. It's recommended to use a local registry to host your images for debugging purpose.
+1. To start debugging, you need to use the dockerfile.debug to rebuild your docker image and deploy your Edge solution again. In VS Code explorer, select Dockerfile.debug and Right-click to choose Build IoT Edge module Docker image. Then containerize and publish your module image as usual. It's recommended to use a local registry to host your images for debugging purpose if you are working on Linux container.
 ![](/dockImageDebug.png)
 2. You can reuse the deployment.json file if you have correct modules and routes for your IoT Edge. In command Palette (Ctrl+Shift+P), type and select Edge: Restart Edge to get your module started in debug version.
 3. Configure your launch.json file:
